@@ -1,2 +1,2 @@
 # segmentation
-localization and segmentation des instances
+localization and segmentation instances
