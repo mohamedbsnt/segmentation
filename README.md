@@ -14,11 +14,27 @@ Comparer les architectures de modèles : Évaluer les performances de Mask R-CNN
 Méthodologie
 Le projet est structuré autour de deux approches de segmentation complémentaires.
 1. Segmentation d'Instance avec Mask R-CNN
+
+  
+   ![spheroide_maskrcnn](https://github.com/user-attachments/assets/44bd6d06-1226-420b-9e6f-9aa51ba9dfce)
+
+ 
 Objectif : Détecter chaque objet individuellement dans l'image, lui assigner une classe (monocouche, agrégation, sphéroïde) et générer un masque de segmentation précis pour chacun. C'est idéal pour compter les objets et analyser leurs propriétés individuelles.
 Architecture : Le modèle Mask R-CNN est utilisé avec un backbone ResNet50-FPN pré-entraîné sur COCO. Les têtes de classification et de masquage ont été ré-entraînées pour nos 3 classes spécifiques (+ 1 pour le fond).
+
+![segmentation_biniare_unet++](https://github.com/user-attachments/assets/0cda122a-01bf-4da1-95cd-a6a8014b2ce4)
+
 Entraînement :
 Version RGB : Le modèle est entraîné directement sur les images couleur.
-Version LAB : Les images sont converties en espace LAB, et le canal de luminance (L) est dupliqué sur 3 canaux pour servir d'entrée au modèle.
+Version LAB : Les images sont converties en espace LAB, et le canal de luminance (L) est dupliqué sur 3 canaux pour servModel,Luminance Conversion,Dice,Jaccard
+Mask R-CNN,yes,0.9558463096618652,0.9154267907142639
+Unet++,yes,0.36221417784690857,0.221160888671875
+Mask R-CNN,no,0.8491584658622742,0.737858772277832
+Unet++,no,0.6892058849334717,0.52579265832901
+
+[comparaison_unet_maskrcnn_rgb_luminance.csv](https://github.com/user-attachments/files/21023918/comparaison_unet_maskrcnn_rgb_luminance.csv)
+
+ir d'entrée au modèle.
 Évaluation : Les performances sont mesurées à l'aide de la métrique mAP (mean Average Precision), qui évalue la qualité des boîtes englobantes et des masques.
 2. Segmentation Sémantique avec Unet++
 Objectif : Classifier chaque pixel de l'image en lui attribuant une des classes cibles. Cette approche est puissante pour obtenir une carte de segmentation complète de l'image. Pour gérer la complexité des objets, une stratégie de fusion a été adoptée.
