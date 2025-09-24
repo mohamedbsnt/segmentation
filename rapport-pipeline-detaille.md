@@ -41,6 +41,7 @@ Le pipeline est fondé sur l’**hybridation Deep Learning + Optimisation évolu
 ### 5. Évaluation
 - Précision, rappel, F1-Score, métriques Dice, IoU, score Fβ sur chaque classe
 
+<img width="3000" height="2000" alt="Design sans titre" src="https://github.com/user-attachments/assets/21124879-0e2a-48b1-816e-2190de05b3ce" />
 
 ## Résultats Finaux
 
