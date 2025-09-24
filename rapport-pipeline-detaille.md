@@ -1,4 +1,4 @@
-# Segmentation Automatisée de Sphéroïdes Cellulaires In Vitro
+# Algorithme génétique et apprentissage profond pour l’amélioration de la localisation des sphéroïdes cellulaires in vitro
 
 ## Résumé
 Projet de Master : "Algorithme génétique et apprentissage profond pour l’amélioration de la localisation des sphéroïdes cellulaires in vitro" — Université Mohammed V de Rabat, 2024.
