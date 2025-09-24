@@ -72,12 +72,15 @@ Le pipeline est fondé sur l’**hybridation Deep Learning + Optimisation évolu
 
 
 ## Visualisations clé :
+<img width="526" height="509" alt="visualisation " src="https://github.com/user-attachments/assets/7d09143c-40c5-432e-bae9-00953f9bdef4" />
 
 - **Architecture globale** du pipeline et interactions entre modules
 - **Qualité des segmentations** :
   - [Masque prédit Mask R-CNN sur image de sphéroïde][11]
   - [Détection de grille optimisée par SE et superposition sur ground truth][13]
   - [Comparaison prédiction brute vs filtrée après SE][13]
+ 
+<img width="2670" height="916" alt="comparison_overlays (4)" src="https://github.com/user-attachments/assets/9e4d3f0d-ad4c-4646-8b07-d8097a93e183" />
 
 - **Exemple du pipeline** : de l’image brute à la grille finale validée
 
@@ -105,6 +108,7 @@ Le pipeline est fondé sur l’**hybridation Deep Learning + Optimisation évolu
 
 ## Conclusion
 L’approche hybride Deep Learning + stratégies évolutionnaires, validée sur un jeu de données public complexe, prouve sa robustesse et son efficacité pour la segmentation automatique, la classification et la localisation spatiale fine de sphéroïdes cellulaires. Cette méthodologie ouvre des **perspectives concrètes** en criblage pharmacologique automatisé, médecine régénérative et bioanalyse haut débit.
+
 
 ---
 Fichier rédigé pour portfolio GitHub.
